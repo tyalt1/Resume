@@ -1,0 +1,4 @@
+#LaTeX temp files
+*.aux
+*.log
+*.synctex.gz

@@ -1,0 +1,81 @@
+\documentclass[11pt]{article} %Sets the default text size to 11pt and class to article.
+%-------------------------------------------------------------------------------
+\topmargin=0.0in %length of margin at the top of the page (1 inch added by default)
+\oddsidemargin=0.0in %length of margin on sides for odd pages
+\evensidemargin=0in %length of margin on sides for even pages
+\textwidth=6.5in %How wide you want your text to be
+\marginparwidth=0.5in
+\headheight=0pt %1in margins at top and bottom (1 inch is added to this value by default)
+\headsep=0pt %Increase to increase white space in between headers and the top of the page
+\textheight=9.0in %How tall the text body is allowed to be on each page
+\pagenumbering{gobble} %Remove page numbers
+
+\newcommand{\tabitem}{~~\llap{\textbullet}~~}
+
+\begin{document}
+%Name
+\centerline{\Huge \sc Tyler Alterio}
+
+%Contact Information
+\centerline{
+1 Rockland Terrace - Natick, MA \textbullet \hspace{1pt} (508)-314-9756 \textbullet \hspace{1pt} Tyler\_{}Alterio@student.uml.edu
+}
+
+\noindent \line(1,0){470}\\
+
+%Education
+\noindent {\Large \bf Education}
+\smallskip \\
+University of Massachusetts Lowell - Anticipated Graduation Fall 2016 \\
+B.S. Electrical Engineering and B.S. Computer Science \\
+GPA: 3.4 \hspace{75pt} Dean's List All Semesters
+
+\noindent \line(1,0){470}\\
+
+%Professional Work Experience
+\noindent {\Large \bf Professional Work Experience}
+\smallskip \\
+\centerline{\bf Philips Color Kinetics \textbullet \hspace{1pt} Burlington, MA \hfill June 2014 to January 2015}
+{\bf Firmware Engineer Co-Op}
+\begin{itemize}
+\itemsep0em
+	\item Practical use of Git version control and tools. In addition to Github management.
+	\item Implemented new features in firmware of PIC based devices with MPLAB IDE.
+	\item Created command-line utility in Qt framework to interface with fixtures via UDP.
+	\item Worked with team of 8 software engineers, utilizing Agile Scrum workflow.
+\end{itemize}
+
+\noindent \line(1,0){470}\\
+
+%Skills
+\noindent {\Large \bf Skills} \smallskip
+\vspace{-10pt}
+\begin{center}
+\begin{tabular}{l|l}
+	{\bf Languages} & {\bf Software} \\
+	\tabitem \textit{General:} C, C++ & \tabitem \textit{Operating Systems:} Windows (up to 10), Linux (Debian-based)\\
+	\tabitem \textit{Object-Oriented:} Java & \tabitem \textit{IDEs:} Visual Studio, Qt Creator, IntelliJ, PyCharm\\
+	\tabitem \textit{Scripting:} Python, Perl & \tabitem \textit{Version Control:} Git\\
+	\tabitem \textit{Shell:} Bash, PowerShell & \tabitem \textit{Hardware:} Arduino, Raspberry Pi\\
+	\tabitem \textit{Functional:} Clojure & ~\\
+	\tabitem \textit{Numerical:} MATLAB & ~\\
+\end{tabular}
+\end{center}
+
+\noindent \line(1,0){470}\\
+
+%Relevant Course Work
+\noindent {\Large \bf Relevant Course Work}
+\begin{itemize}
+\itemsep0em
+	\item \underline{Intro to Engineering 2:} MATLAB application and use of BASIC STAMP microcontrollers.	
+	\item \underline{Computing 4:} Adoption of OpenCV computer vision library and Qt libraries for C++.
+	\item \underline{Electronics 1:} Application of operational amplifiers, diodes, MOSFETs, and BJTs.
+	\item \underline{Microprocessor System Design:} Program design in x86 and PIC assembly.
+\end{itemize}
+
+%End
+%\vfill
+\noindent \line(1,0){470} \\
+
+\end{document}
