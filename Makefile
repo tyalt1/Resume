@@ -5,7 +5,7 @@ build: resume.tex
 	mv resume.pdf "AlterioTyler_Resume_$(shell date +%b%Y).pdf"
 
 clean:
-	rm -rf *.aux *.log
+	rm -rf *.aux *.log *.out
 
 clean-all: clean
 	rm -rf *.pdf
