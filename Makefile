@@ -1,11 +1,17 @@
-.PHONY: all view clean cleanall
+RESUME = "AlterioTyler_Resume_$(shell date +%b%Y).pdf"
 
-all: resume.tex
+.PHONY: all docker clean cleanall
+
+#install pdflatex: apt-get install texlive-latex-base
+
+all: $(RESUME)
+
+$(RESUME): resume.tex
 	pdflatex $<
-	mv resume.pdf "AlterioTyler_Resume_$(shell date +%b%Y).pdf"
+	mv resume.pdf $(RESUME)
 
-view: all
-	gnome-open "AlterioTyler_Resume_$(shell date +%b%Y).pdf"
+docker:
+	-docker run -it --rm -v `pwd`:/code -w /code debian /bin/bash
 
 clean:
 	rm -rf *.aux *.log *.out
