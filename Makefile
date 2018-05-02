@@ -1,7 +1,7 @@
 RESUME = "AlterioTyler_Resume_$(shell date +%b%Y).pdf"
 IMAGE = resume-build
 
-.PHONY: all docker clean cleanall
+.PHONY: all docker dev clean cleanall
 
 all: $(RESUME)
 
@@ -14,6 +14,9 @@ $(IMAGE):
 
 docker: $(IMAGE)
 	-docker run -it --rm -v `pwd`:/code -w /code $(IMAGE) make
+
+dev: $(IMAGE)
+	-docker run -it --rm -v `pwd`:/code -w /code $(IMAGE) bash
 
 clean:
 	rm -rf *.aux *.log *.out
