@@ -11,5 +11,5 @@ $ make
 
 If building in Windows/Mac, you can use docker.
 ```bash
-$ make docker
+$ make docker-build
 ```
